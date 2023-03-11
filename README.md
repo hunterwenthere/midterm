@@ -1,27 +1,5 @@
-#NKU ASE220 Mid-term starter package
-This repository is designed for the ASE220 - Full-stack development course. This repository contains a starter application for the midterm that demonstrates how to create a full-stack Content Management System (CMS) that leverages JSONblob.com as a remote database.
+    I will be creating an application where users can write blog/microblog style posts. Users will be able to post embedded links to videos/posts/articles and write blog style posts on them, post original pictures/videos, or just start a text-based conversation. Other users can then start a comment thread by replying to the original user’s post or start their own thread in the conversation.
 
-### The application demostrates:
-- client-side application design
-- the use of RESTful APIs
-- CRUD operations
-- client-server communication
+    Users of the app will need to create an account used to sign in to the application, this will be a username to go by in the application as well as a password with at least 8 characters to sign in. Once a user has successfully created an account, they will be able to begin posting. This application will lump all posts together in sequential order, but users will have the option to tag their post based on the kind of topics they think is relevant to the content of their post. Users will be able to follow these topics to see posts like this from other users who tag their content with similar tags.
 
-I did not implement any fancy HTML/CSS design because the focus of this application is to understand how a client application would interact with the server-side component via REST APIs.
-
-### How to start
-1. Load the folder into Visual Studio code and start the live server
-2. Browse index.html
-
-### How it works
-The assets folder contains the following "libraries":
-- api.js: this libary realizes API calls to exchange information between the client and the server in JSON format. API calls are based on AXIOS (https://axios-http.com/docs/intro).
-- database.js: this library manages CRUD database operations and standardizes them, providing an interface to the API libary.
-- getAllURLParams.js: this library retrieves query string parameters, which are utilized to view, edit, or delete a single quote.
-
-This application is built using the Model-View-Controller approach, to best separate the interface (HTML), the data (API/JSON), and the logic. This is implemented as follows:
-- The HTML files only contain HTML code and links to external JavaScript files.
-- The app.js file contains the logic of the application: it manipulates the DOM, listens to events, and communicates with the database
-- The database and APIs provide the application with data storage/retrieval capabilities.
-
-Have fun!"# midterm" 
+    HTML elements will be used to make up the front end interface where users will do things like post, follow, delete, edit and create a new user page. JavaScript will be used to add functionality to the HTML elements, and generate the content based on the users input in with the front end of the application. The database will be where all user/application information is stored with an API that is going to store and retrieve information that is posted and requested by an individual user on the platform.
